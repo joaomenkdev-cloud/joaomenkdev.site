@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João · Backend Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="bg-overlay"></div>
+<div class="bg-grain"></div>
+
+<div class="site">
+
+  <!-- ── NAVBAR ──────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">J<span>.</span>Menk</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-drawer" id="mobile-drawer">
+    <a href="#about"    class="drawer-link">Sobre</a>
+    <a href="#projects" class="drawer-link">Projetos</a>
+    <a href="#skills"   class="drawer-link">Skills</a>
+    <a href="#contact"  class="drawer-link">Contato</a>
+  </nav>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- ── HERO ─────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Backend Engineer &nbsp;·&nbsp; Disponível para novos projetos</p>
+
+      <h1 class="hero-name">
+        João
+        <span>Menk</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-text" id="typewriter-text"></span>
+        <span class="role-cursor"></span>
+      </div>
+
+      <p class="hero-tagline">
+        Engenheiro backend focado em sistemas robustos, APIs bem desenhadas
+        e automações que resolvem problemas reais. Quando precisa, o frontend também fica pronto.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-primary"
+          onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+          Ver Projetos
+        </button>
+        <button class="btn-ghost"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Entrar em Contato
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-index">01</div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <img src="images/foto.jpg" alt="João Menk" />
+          </div>
+          <div class="about-deco"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="reveal">
+            <span class="section-label">Sobre</span>
+            <h2 class="section-title">O backend<br><em>resolve</em></h2>
+          </div>
+
+          <p class="about-bio reveal reveal-delay-1">
+            Sou desenvolvedor backend apaixonado por construir sistemas que realmente funcionam —
+            APIs limpas, automações inteligentes e arquiteturas que aguentam o tranco.
+            Meu foco principal é Python e .NET, mas entendo o ciclo completo de um produto.
+          </p>
+
+          <p class="about-bio reveal reveal-delay-2">
+            Quando o projeto pede, também cuido do frontend.
+            Sei fazer interfaces funcionais e bem apresentadas — sem depender de ninguém para terminar a entrega.
+          </p>
+
+          <div class="about-stats reveal reveal-delay-2">
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Projetos públicos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Linguagens principais</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Sistemas rodando</span>
+            </div>
+          </div>
+
+          <div class="social-row reveal reveal-delay-3">
+            <a href="https://github.com/joaomenkdev-cloud" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://instagram.com/jv_menk_" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              Instagram
+            </a>
+            <a href="mailto:seu@email.com" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="projects-header">
+        <div class="reveal">
+          <span class="section-label">Projetos</span>
+          <h2 class="section-title">Trabalhos<br><em>reais</em></h2>
+        </div>
+        <p class="projects-count reveal">03 projetos</p>
+      </div>
+
+      <div class="projects-grid" style="grid-template-columns: repeat(3,1fr);">
+
+        <!-- PROJECT 01 — L-Hub FEATURED (spans 2 cols) -->
+        <article class="project-card featured reveal">
+          <div class="project-thumb">
+            <img src="images/project-02.png" alt="L-Hub Vestibular" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2025</span>
+              <span class="project-type">API REST · IA</span>
+            </div>
+            <h3 class="project-title">L-Hub Vestibular</h3>
+            <p class="project-desc">
+              Plataforma vestibular completa com simulados adaptativos, correção automática por IA
+              e importação de provas via PDF (ENEM, FUVEST, UNICAMP). Backend em ASP.NET Core com Swagger,
+              auth SHA-256 e SQLite. Frontend estático servido pelo próprio backend.
+            </p>
+            <div class="project-tags">
+              <span class="tag">.NET 10</span>
+              <span class="tag">C#</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/joaomenkdev-cloud/L-hub-Vestibular" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 — Bot de Ofertas Telegram -->
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-thumb">
+            <img src="images/project-01.png" alt="Bot de Ofertas Telegram" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2025</span>
+              <span class="project-type">Automação</span>
+            </div>
+            <h3 class="project-title">Bot de Ofertas · Telegram</h3>
+            <p class="project-desc">
+              Bot 24/7 que faz web scraping no Mercado Livre, filtra produtos de tech e gaming
+              e envia para grupos do Telegram. Fila inteligente com SHA256 e MySQL.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Selenium</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Telegram API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/joaomenkdev-cloud/Bot-ofertas-Telegram" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 — Valorant Tracker -->
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-thumb">
+            <img src="images/project-03.png" alt="Valorant Tracker" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-year">2025</span>
+              <span class="project-type">Data · Analytics</span>
+            </div>
+            <h3 class="project-title">Valorant Tracker</h3>
+            <p class="project-desc">
+              Ferramenta de análise de desempenho que transforma dados brutos de partidas em insights
+              acionáveis. Monitora métricas críticas e identifica padrões de jogo.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/joaomenkdev-cloud/Valorant-Tracker" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-layout">
+
+        <div class="skills-intro reveal">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Stack &<br><em>Ferramentas</em></h2>
+          <p class="skills-summary">
+            Backend é o foco — mas conheço o ciclo completo.
+            Desde a modelagem do banco até a tela que o usuário vê.
+          </p>
+        </div>
+
+        <div class="skills-categories">
+
+          <div class="skill-group reveal reveal-delay-1">
+            <span class="skill-group-label">Backend · Core</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C# / .NET</span>
+              <span class="skill-pill">ASP.NET Core</span>
+              <span class="skill-pill">REST API</span>
+              <span class="skill-pill">Entity Framework</span>
+              <span class="skill-pill">Swagger / OpenAPI</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-2">
+            <span class="skill-group-label">Banco de Dados &amp; Infra</span>
+            <div class="skill-pills">
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">SQLite</span>
+              <span class="skill-pill">Firebase / Firestore</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-3">
+            <span class="skill-group-label">Automação &amp; Scraping</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Selenium</span>
+              <span class="skill-pill">BeautifulSoup</span>
+              <span class="skill-pill">Telegram Bot API</span>
+              <span class="skill-pill">Web Scraping</span>
+              <span class="skill-pill">SHA256 / Hashing</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-4">
+            <span class="skill-group-label">Frontend · Quando necessário</span>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML / CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Tailwind CSS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-intro reveal">
+          <span class="section-label">Contato</span>
+          <h2 class="section-title">Bora<br><em>construir</em></h2>
+          <p class="contact-copy">
+            Tem um projeto, uma ideia ou quer conversar sobre tecnologia?
+            Minha caixa de entrada está aberta.
+          </p>
+          <a href="mailto:seu@email.com" class="contact-email">
+            seu@email.com
+          </a>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contact-form">
+          <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Me conta sobre o projeto..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <span class="form-note">Respondo em até 24h.</span>
+            <button type="submit" class="btn-primary">Enviar</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer>
+    <div class="footer-inner container">
+      <p class="footer-sig">João <span>Menk</span></p>
+      <p class="footer-meta">Backend first · <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
