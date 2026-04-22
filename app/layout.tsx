@@ -1,10 +1,10 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Big_Shoulders_Display, Cormorant_Garamond, Sora, Fira_Code } from "next/font/google"
+import { Oswald, Cormorant_Garamond, Sora, Fira_Code } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const bigShoulders = Big_Shoulders_Display({
+const bigShoulders = Oswald({
   subsets: ["latin"],
   variable: "--font-big-shoulders",
   weight: ["400", "700", "800", "900"],
