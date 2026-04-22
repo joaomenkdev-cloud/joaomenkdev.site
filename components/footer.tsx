@@ -65,10 +65,10 @@ export function Footer() {
               Se voce tem um problema real para resolver, entre em contato.
             </p>
             <a 
-              href="mailto:contato@joaomenk.dev" 
+              href="mailto:joaomenkdev@gmail.com" 
               className="font-sans text-[clamp(1.4rem,3vw,2.2rem)] font-bold uppercase tracking-[-0.01em] text-[#dbd4c5] hover:text-[#c9955f] transition-colors duration-300"
             >
-              contato@joaomenk.dev
+              joaomenkdev@gmail.com
             </a>
           </motion.div>
 
@@ -119,7 +119,7 @@ export function Footer() {
 
       {/* Main CTA */}
       <motion.a
-        href="mailto:contato@joaomenk.dev"
+        href="mailto:joaomenkdev@gmail.com"
         data-cursor-hover
         className="relative block overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
