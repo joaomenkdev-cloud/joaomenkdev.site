@@ -197,7 +197,7 @@ export function Works() {
             x: springX,
             y: springY,
             translateX: "-50%",
-            translateY: "-320%",
+            translateY: "-50%",
           }}
           animate={{
             opacity: hoveredIndex !== null && !projects[hoveredIndex].noImage ? 1 : 0,
